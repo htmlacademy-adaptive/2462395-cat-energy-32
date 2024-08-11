@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Екатерина Шалмина](https://up.htmlacademy.ru/adaptive/32/user/2462395).
-* Наставник: [Николай Колганов](https://htmlacademy.ru/profile/id794007).
+* Наставник: [Ирина Антипина](https://htmlacademy.ru/profile/id2108789).
 
 ---
 
