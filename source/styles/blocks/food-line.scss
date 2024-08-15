@@ -1,3 +1,14 @@
 .food-line {
+  background-color: $bg-secondary;
+}
 
+.food-line__title {
+  @include oswald-uppercase;
+  @include oswald-400;
+  font-size: 24px;
+  line-height: 37px;
+}
+
+.food-line__button {
+  line-height: 16px;
 }

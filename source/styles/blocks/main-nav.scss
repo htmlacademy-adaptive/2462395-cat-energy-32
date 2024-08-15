@@ -1,15 +1,17 @@
-.main-nav {
+// .main-nav {
 
-}
+// }
 
 .main-nav__list {
-
+  @include reset-list;
 }
 
 .main-nav__link {
-
+  @include oswald-uppercase;
+  font-size: 20px;
+  line-height: 20px;
 }
 
-.main-nav__link--current {
+// .main-nav__link--current {
 
-}
+// }

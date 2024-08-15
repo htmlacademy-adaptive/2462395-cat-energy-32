@@ -1,11 +1,19 @@
 .button {
-
+  @include oswald-uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  border: none;
 }
 
 .button--primary {
-
+  color: $color-primary;
+  background-color: $bg-primary;
 }
 
 .button--secondary {
+  background-color: $bg-secondary;
+}
 
+.button--show-more {
+  color: $color-base;
 }

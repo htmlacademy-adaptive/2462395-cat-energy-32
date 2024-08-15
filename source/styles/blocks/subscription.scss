@@ -1,3 +1,9 @@
-.subscription {
+// .subscription {
 
+// }
+
+.subscription__input {
+  @include oswald-uppercase;
+  font-size: 20px;
+  color: $color-base;
 }

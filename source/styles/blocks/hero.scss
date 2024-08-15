@@ -1,15 +1,11 @@
 .hero {
-
+  background-color: $bg-primary;
 }
 
 .hero__slogan {
-
-}
-
-.hero__img {
-
-}
-
-.hero__button {
-
+  @include oswald-uppercase;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: $color-primary;
 }

@@ -1,7 +1,11 @@
-.additional-catalog {
+// .additional-catalog {
 
-}
+// }
 
-.additional-catalog__wrapper {
+// .additional-catalog__wrapper {
 
+// }
+
+.additional-catalog__list {
+  @include reset-list;
 }

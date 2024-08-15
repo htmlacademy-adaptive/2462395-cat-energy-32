@@ -1,7 +1,12 @@
-.page {
+// .page {
 
-}
+// }
 
 .page__body {
   margin: 0;
+  font-family: $primary-font;
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-base;
+  background-color: $bg-base;
 }

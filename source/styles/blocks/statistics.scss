@@ -1,3 +1,21 @@
-.statistics {
+// .statistics {
 
+// }
+
+.statistics__data {
+  @include oswald-uppercase;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.statistics__definition {
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+}
+
+.statistics__data--total {
+  font-size: 14px;
+  line-height: 20px;
 }

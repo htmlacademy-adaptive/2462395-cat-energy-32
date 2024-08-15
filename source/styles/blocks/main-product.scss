@@ -1,3 +1,20 @@
-.main-product {
+.main-product--show-more {
+  text-align: center;
+}
 
+.main-product__title {
+  @include oswald-uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #222222;
+}
+
+.main-product__title--show-more {
+  color: #111111;
+}
+
+.main-product__subtitle--show-more {
+  font-size: 12px;
+  line-height: 16px;
 }

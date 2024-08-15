@@ -1,3 +1,11 @@
 .additional-product {
+  line-height: 14px;
+}
 
+.additional-product__title {
+  @include oswald-uppercase;
+  @include oswald-400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #222222;
 }
