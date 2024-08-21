@@ -5,3 +5,38 @@
 .function__list {
   @include reset-list;
 }
+
+.function__item {
+  display: flex;
+  gap: 20px;
+}
+
+.function__item::before {
+  flex-shrink: 0;
+  content: "";
+  width: 60px;
+  height: 60px;
+  background-color: $bg-primary;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.function__item--healthy::before {
+  background-image: url("../../icons/stack.svg#leaf-icon");
+  background-size: 30px 32px;
+}
+
+.function__item--easy::before {
+  background-image: url("../../icons/stack.svg#glass-icon");
+  background-size: 26px 29px;
+}
+
+.function__item--safe::before {
+  background-image: url("../../icons/stack.svg#cutlery-icon");
+  background-size: 25px 30px;
+}
+
+.function__item--fast::before {
+  background-image: url("../../icons/stack.svg#clock-icon");
+  background-size: 27px 31px;
+}

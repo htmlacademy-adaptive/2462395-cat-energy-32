@@ -3,11 +3,14 @@
 }
 
 .main-product__title {
-  @include oswald-uppercase;
+  @include title("Oswald", 400, #222222);
   font-size: 16px;
   line-height: 20px;
-  font-weight: 400;
-  color: #222222;
+  text-transform: uppercase;
+}
+
+.main-product__title-link {
+  @include opacity;
 }
 
 .main-product__title--show-more {

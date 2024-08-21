@@ -3,9 +3,10 @@
 }
 
 .hero__slogan {
-  @include oswald-uppercase;
+  @include title;
   font-size: 14px;
   line-height: 14px;
   text-align: center;
   color: $color-primary;
+  text-transform: uppercase;
 }

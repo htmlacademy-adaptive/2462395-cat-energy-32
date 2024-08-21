@@ -14,14 +14,76 @@
   list-style: none;
 }
 
-@mixin oswald-400($font-family: "Oswald", $font-weight: 400, $color: #000000) {
+@mixin title($font-family: "Oswald", $font-weight: 400, $color: #000000) {
   font-family: $font-family;
   font-weight: $font-weight;
   color: $color;
 }
 
-@mixin oswald-uppercase($font-family: "Oswald", $color: #000000, $text-transform: uppercase) {
-  font-family: $font-family;
-  color: $color;
-  text-transform: $text-transform;
+@mixin mask($link: #666666, $transition: background-color 0.4s ease, $hover: #68b738, $active: rgba(104, 183, 56, 0.3)) {
+  & {
+    background-color: $link;
+    transition: $transition;
+
+    &:hover,
+    &:focus-visible {
+      background-color: $hover;
+    }
+
+    &:active {
+      background-color: $active;
+    }
+  }
+}
+
+@mixin opacity($transition: opacity 0.4s ease, $hover: 0.6, $active: 0.3) {
+  & {
+    transition: $transition;
+
+    &:hover,
+    &:focus-visible {
+      opacity: $hover;
+    }
+
+    &:active {
+      opacity: $active;
+    }
+  }
+}
+
+@mixin button($bg-transition: background-color 0.4s ease, $color-transition: color 0.4s ease, $bg-hover: #5eaa2f, $color-active: rgba(255, 255, 255, 0.3)) {
+  & {
+    transition:
+      $bg-transition,
+      $color-transition;
+
+    &:hover,
+    &:focus-visible,
+    &:active {
+      background-color: $bg-hover;
+    }
+
+    &:active {
+      color: $color-active;
+    }
+  }
+}
+
+@mixin input {
+  & {
+    transition: border-color 0.4s ease;
+    border: 1px solid #e7e7e7;
+
+    &:hover {
+      border-color: #cdcdcd;
+    }
+
+    &:focus-visible {
+      border-color: $color-base;
+    }
+
+    &:invalid {
+      border-color: #ff8282;
+    }
+  }
 }

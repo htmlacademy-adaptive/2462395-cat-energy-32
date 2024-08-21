@@ -1,14 +1,57 @@
 .food-line {
+  padding: 21px 33px 18px 20px;
   background-color: $bg-secondary;
 }
 
 .food-line__title {
-  @include oswald-uppercase;
-  @include oswald-400;
+  @include title;
+  margin: 10px 0 70px 29px;
   font-size: 24px;
   line-height: 37px;
+  text-transform: uppercase;
+}
+
+.food-line__description {
+  margin: 0;
+  padding-bottom: 23px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.food-line--lose {
+  background-image: url("../../icons/stack.svg#background-cat-slim");
+  background-size: 50px 53px;
+  background-repeat: no-repeat;
+  background-position: 20px 21px;
+}
+
+.food-line--gain {
+  background-image: url("../../icons/stack.svg#background-cat-pro");
+  background-size: 67px 50px;
+  background-repeat: no-repeat;
+  background-position: 13px 24px;
 }
 
 .food-line__button {
+  @include opacity(opacity 0.4s ease, 1, 0.3);
+  display: flex;
+  align-items: center;
   line-height: 16px;
+}
+
+.food-line__button::after {
+  content: "";
+  width: 32px;
+  height: 10px;
+  margin-left: 15px;
+  background-image: url("../../icons/stack.svg#arrow-button");
+  background-size: 24px 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform-origin: left;
+}
+
+.food-line__button:hover::after,
+.food-lite__button:active::after {
+  transform: scaleX(1.3);
 }

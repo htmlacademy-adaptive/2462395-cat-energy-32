@@ -1,3 +1,27 @@
 .social {
   @include reset-list;
+  display: flex;
+  gap: 14px;
+}
+
+.social__link {
+  @include mask;
+  display: block;
+  width: 38px;
+  height: 32px;
+  mask-size: 28px 22px;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+.social__link--vk {
+  mask-image: url("../../icons/stack.svg#vk-icon");
+}
+
+.social__link--youtube {
+  mask-image: url("../../icons/stack.svg#youtube-icon");
+}
+
+.social__link--telegram {
+  mask-image: url("../../icons/stack.svg#telegram-icon");
 }

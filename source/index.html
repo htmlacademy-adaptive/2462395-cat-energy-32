@@ -16,13 +16,12 @@
   <header class="main-header">
     <a class="main-header__logo logo" href="index.html" aria-current="page">
       <picture>
-        <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-trademark-desktop.svg">
-        <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-trademark-tablet.svg">
-        <img class="logo__trademark" src="logo-trademark-mobile.svg" width="33" height="38" alt="Логотип компании">
+        <source media="(min-width: 1440px)" srcset="images/logo-trademark-desktop.svg" width="70" height="59" type="image/svg+xml">
+        <source media="(min-width: 768px)" srcset="images/logo-trademark-tablet.svg" width="60" height="50" type="image/svg+xml">
+        <img class="logo__trademark" src="images/logo-trademark-mobile.svg" width="33" height="38" alt="Логотип компании">
       </picture>
       <picture>
-        <source width="118" height="21" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-caption-desktop.svg">
-        <source width="101" height="18" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-caption-tablet.svg">
+        <source media="(min-width: 768px)" srcset="images/logo-caption-tablet.svg" width="101" height="18" type="image/svg+xml">
         <img class="logo__caption" src="images/logo-caption-mobile.svg" width="101" height="18" alt="Кэт энерджи.">
       </picture>
     </a>
@@ -123,6 +122,9 @@
         </picture>
         <button class="cat-slider__toggle" type="button">
           <span class="visually-hidden">Изменить внешний вид кота.</span>
+          <svg class="cat-slider__curtain" width="40" height="256">
+            <use href="../../icons/stack.svg#slider-curtain-mobile"></use>
+          </svg>
         </button>
       </div>
     </section>
@@ -135,35 +137,38 @@
       <picture>
         <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
         <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
-        <img class="contacts__map map" src="images/map-mobile@1x.png" srcset="map-mobile@2x.png 2x" width="320" height="362" alt="Карта с локацией компании.">
+        <img class="contacts__map map" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Карта с локацией компании.">
       </picture>
     </section>
   </main>
   <footer class="main-footer">
     <div class="main-footer__wrapper">
       <a class="main-footer__logo logo" href="index.html" aria-current="page">
-        <img class="logo__caption" src="images/logo-footer.svg" width="128" height="24" alt="Логотип компании Кэт энерджи.">
+        <img class="logo__caption" src="images/logo-caption-mobile.svg" width="128" height="24" alt="Логотип компании Кэт энерджи.">
       </a>
       <ul class="main-footer__social-list social">
         <li class="social__item">
-          <a class="social__link" href="https://vk.com/htmlacademy">
+          <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">Перейти во ВКонтакте.</span>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
             <span class="visually-hidden">Перейти в YouTube.</span>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="https://t.me/htmlacademy">
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
             <span class="visually-hidden">Перейти в Telegram.</span>
           </a>
         </li>
       </ul>
       <div class="main-footer__developer developer">
-        <a class="developer__link" href="https://htmlacademy.ru/intensive/htmlcss">
-          <span class="visually-hidden">Перейти на сайт HTML Academy.</span>
+        <a class="developer__link developer__link--caption" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="visually-hidden">Перейти на сайт HTML Academy</span>
+        </a>
+        <a class="developer__link developer__link--icon" href="https://htmlacademy.ru/intensive/adaptive" tabindex="-1">
+          <span class="visually-hidden">на интенсивный курс по адаптивной вёрстке и автоматизации.</span>
         </a>
       </div>
     </div>

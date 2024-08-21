@@ -7,10 +7,10 @@
 // }
 
 .contacts__message {
-  @include oswald-uppercase;
+  @include title("Oswald", 400, #111111);
   font-size: 16px;
   line-height: 20px;
-  color: #111111;
+  text-transform: uppercase;
 }
 
 .contacts__address {

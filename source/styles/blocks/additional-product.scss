@@ -3,9 +3,8 @@
 }
 
 .additional-product__title {
-  @include oswald-uppercase;
-  @include oswald-400;
+  @include title("Oswald", 400, #222222);
   font-size: 16px;
   line-height: 16px;
-  color: #222222;
+  text-transform: uppercase;
 }

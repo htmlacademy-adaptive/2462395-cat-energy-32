@@ -1,5 +1,6 @@
 .page-title {
-  @include oswald-400;
+  @include title;
+  margin: 0;
   font-size: 36px;
   line-height: 36px;
 }
