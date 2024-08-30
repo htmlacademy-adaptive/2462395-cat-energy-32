@@ -1,21 +1,53 @@
 .food-line {
   padding: 21px 33px 18px 20px;
   background-color: $bg-secondary;
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 29px 53px 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 77px 61px 55px 52px;
+    width: 570px;
+  }
 }
 
 .food-line__title {
   @include title;
-  margin: 10px 0 70px 29px;
+  margin: 10px 0 29px 70px;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    margin-bottom: 24px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 159px;
+    margin-bottom: 73px;
+  }
 }
 
 .food-line__description {
   margin: 0;
-  padding-bottom: 23px;
   margin-bottom: 15px;
+  padding-bottom: 23px;
   border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    max-width: 340px;
+    margin-bottom: 25px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 457px;
+    margin-bottom: 0;
+  }
 }
 
 .food-line--lose {
@@ -23,6 +55,16 @@
   background-size: 50px 53px;
   background-repeat: no-repeat;
   background-position: 20px 21px;
+
+  @media (min-width: $tablet-width) {
+    background-size: 200px 211px;
+    background-position: right 63px center;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-size: 100px 106px;
+    background-position: 52px 41px;
+  }
 }
 
 .food-line--gain {
@@ -30,25 +72,46 @@
   background-size: 67px 50px;
   background-repeat: no-repeat;
   background-position: 13px 24px;
+
+  @media (min-width: $tablet-width) {
+    background-size: 268px 200px;
+    background-position: right 29px center;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-size: 134px 100px;
+    background-position: 33px 47px;
+  }
 }
 
 .food-line__button {
   @include opacity(opacity 0.4s ease, 1, 0.3);
   display: flex;
   align-items: center;
+  padding: 4px 0;
   line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .food-line__button::after {
   content: "";
   width: 32px;
-  height: 10px;
+  height: 24px;
   margin-left: 15px;
   background-image: url("../../icons/stack.svg#arrow-button");
   background-size: 24px 10px;
   background-repeat: no-repeat;
-  background-position: center;
-  transform-origin: left;
+  background-position: left center;
+  transform-origin: left center;
+  transition: transform 0.4s ease;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 25px;
+  }
 }
 
 .food-line__button:hover::after,

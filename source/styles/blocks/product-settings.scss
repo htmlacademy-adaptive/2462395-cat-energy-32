@@ -1,8 +1,31 @@
 .product-settings {
+  grid-column: 2 / 3;
+  display: grid;
   font-size: 12px;
   line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 250px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+  }
+}
+
+.product-settings__wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    padding: 5px 0;
+    border-bottom: 1px solid #cdcdcd;
+  }
 }
 
 .product-settings__definition {
+  margin: 0;
   text-align: right;
 }

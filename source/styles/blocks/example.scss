@@ -1,3 +1,48 @@
 .example {
+  padding: 25px 20px 40px;
   background-color: #eaeaea;
+
+  @media (min-width: $tablet-width) {
+    padding: 15px 30px 101px;
+    background-image: linear-gradient(to bottom, $bg-base 57%, #eaeaea 57%);
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 55px 110px 75px;
+    background-image: linear-gradient(to bottom, $bg-base 29%, #eaeaea 29%);
+  }
+}
+
+.example__wrapper {
+  @media (min-width: $desktop-width) {
+    width: 436px;
+  }
+}
+
+.example__title {
+  margin: 0;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 146px;
+  }
+}
+
+.example__description {
+  margin: 0;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 69px;
+  }
 }

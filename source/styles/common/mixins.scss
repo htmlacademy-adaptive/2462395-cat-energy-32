@@ -20,22 +20,6 @@
   color: $color;
 }
 
-@mixin mask($link: #666666, $transition: background-color 0.4s ease, $hover: #68b738, $active: rgba(104, 183, 56, 0.3)) {
-  & {
-    background-color: $link;
-    transition: $transition;
-
-    &:hover,
-    &:focus-visible {
-      background-color: $hover;
-    }
-
-    &:active {
-      background-color: $active;
-    }
-  }
-}
-
 @mixin opacity($transition: opacity 0.4s ease, $hover: 0.6, $active: 0.3) {
   & {
     transition: $transition;

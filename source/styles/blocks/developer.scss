@@ -1,5 +1,12 @@
 .developer {
   display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    gap: 18px;
+    padding: 5px 0;
+  }
 }
 
 .developer__link--caption {
@@ -8,14 +15,33 @@
   width: 113px;
   height: 34px;
   background-image: url("../../icons/stack.svg#developer-logo-caption");
+  background-repeat: no-repeat;
+  background-size: 113px 20px;
+  background-position: center;
 }
 
 .developer__link--icon {
-  @include mask;
-  display: block;
-  width: 37px;
-  height: 34px;
-  mask-image: url("../../icons/stack.svg#developer-logo-icon");
-  mask-repeat: no-repeat;
-  mask-position: center;
+  margin-right: -5px;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 37px;
+    height: 34px;
+    background-color: #666666;
+    mask-image: url("../../icons/stack.svg#developer-logo-icon");
+    mask-repeat: no-repeat;
+    mask-size: 27px 34px;
+    mask-position: center;
+    transition: background-color 0.4s ease;
+  }
+
+  &:hover::after,
+  &:focus-visible::after {
+    background-color: $bg-primary;
+  }
+
+  &:active::after {
+    background-color: #d2e9c3;
+  }
 }

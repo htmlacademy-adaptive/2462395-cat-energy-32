@@ -1,14 +1,31 @@
 .gift-option {
   padding: 187px 61px 43px 58px;
-  flex-direction: column;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   min-height: 90px;
   color: $color-primary;
-  background-color: $bg-primary;
+  background-color: rgba(104, 183, 56, 0.85);
   background-image: url("../../icons/stack.svg#icon-gift");
   background-size: 78px 80px;
   background-repeat: no-repeat;
   background-position: center 59px;
+
+  @media (min-width: $tablet-width) {
+    padding: 71px 125px 69px 421px;
+    text-align: left;
+    background-size: 80px 83px;
+    background-position: 77px center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 185px 42px 43px;
+    width: 245px;
+    text-align: center;
+    background-position: center 56px;
+  }
+}
+
+.gift-option__description {
+  margin: 0 auto;
 }

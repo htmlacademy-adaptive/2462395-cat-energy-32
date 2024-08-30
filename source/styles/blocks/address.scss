@@ -1,0 +1,11 @@
+.address__street {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 19px;
+  }
+}
+
+.address__city {
+  margin: 0;
+}

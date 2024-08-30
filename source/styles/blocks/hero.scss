@@ -1,12 +1,94 @@
 .hero {
-  background-color: $bg-primary;
+  position: relative;
+  padding: 27px 20px 20px;
+  background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 61%, $bg-base 61%);
+
+  @media (min-width: $tablet-width) {
+    padding: 65px 30px 0;
+    background-image: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 447px auto;
+    grid-auto-flow: row dense;
+    place-items: start start;
+    padding: 29px 110px 52px;
+    background-image: linear-gradient(to right, $bg-base 50%, rgba(104, 183, 56, 0.85) 50%);
+  }
+}
+
+.hero__title {
+  margin: 0;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    width: 416px;
+    margin-bottom: 40px;
+    margin-left: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin-top: 81px;
+    margin-right: -47px;
+    margin-left: 80px;
+  }
 }
 
 .hero__slogan {
   @include title;
+  margin: 0;
+  margin-bottom: 29px;
   font-size: 14px;
   line-height: 14px;
   text-align: center;
   color: $color-primary;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+    margin-left: 90px;
+    font-size: 20px;
+    line-height: 20px;
+    color: $color-secondary;
+    text-align: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin-top: 241px;
+    margin-left: 80px;
+  }
+}
+
+.hero__img {
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+}
+
+.hero__button {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 526px;
+    left: 120px;
+    width: 244px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin-top: 313px;
+    margin-left: 80px;
+  }
 }

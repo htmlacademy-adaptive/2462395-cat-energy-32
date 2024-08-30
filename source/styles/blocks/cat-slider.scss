@@ -1,5 +1,7 @@
 .cat-slider {
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .cat-slider__toggle {
@@ -10,6 +12,7 @@
   display: block;
   width: 40px;
   height: 256px;
+  padding: 0;
   color: #666666;
   background-color: transparent;
   border: none;
@@ -25,3 +28,52 @@
     color: #9ecc82;
   }
 }
+
+.cat-slider__image {
+  display: block;
+  margin: 0 auto;
+}
+
+.example__fat-cat-wrapper {
+  width: 140px;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    width: 280px;
+  }
+}
+
+.example__skinny-cat-wrapper {
+  width: 140px;
+
+  @media (min-width: $tablet-width) {
+    width: 280px;
+  }
+}
+
+.cat-slider__image--skinny {
+  width: 280px;
+  max-width: none;
+  object-fit: cover;
+  object-position: top 0 right 140px;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    object-position: top 0 right 280px;
+  }
+}
+
+.cat-slider__image--fat {
+  width: 280px;
+  max-width: none;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+  }
+}
+
+// .cat-slider__curtain {
+//   @media (min-width: $tablet-width) {
+//     transform: scaleY(2)
+//   }
+// }
