@@ -20,6 +20,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    max-width: 340px;
     margin: 0 0 24px;
     font-size: 36px;
     line-height: 36px;
@@ -96,6 +97,7 @@
 }
 
 .food-line__button::after {
+  flex: none;
   content: "";
   width: 32px;
   height: 24px;

@@ -13,10 +13,10 @@
   }
 
   &::after {
-    content: "";
-    display: block;
+    flex: none;
     width: 37px;
     height: 34px;
+    content: "";
     background-color: #666666;
     mask-image: url("../../icons/stack.svg#developer-logo-icon");
     mask-repeat: no-repeat;
