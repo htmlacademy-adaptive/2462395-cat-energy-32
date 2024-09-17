@@ -1,41 +1,38 @@
 .food-line {
-  padding: 21px 33px 18px 20px;
+  padding: 31px 33px 13px 20px;
   background-color: $bg-secondary;
 
   @media (min-width: $tablet-width) {
-    padding: 77px 29px 53px 53px;
+    padding: 78px 29px 52px 53px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 77px 61px 55px 52px;
+    padding: 77px 61px 54px 52px;
     width: 570px;
   }
 }
 
 .food-line__title {
   @include title;
-  margin: 10px 0 29px 70px;
+  margin: 0 0 29px 70px;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    margin-left: 0;
-    margin-bottom: 24px;
+    margin: 0 0 24px;
     font-size: 36px;
     line-height: 36px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 159px;
-    margin-bottom: 73px;
+    margin: 0 0 73px 162px;
   }
 }
 
 .food-line__description {
-  margin: 0;
-  margin-bottom: 15px;
-  padding-bottom: 23px;
+  margin: 0 0 10px;
+  padding-bottom: 22px;
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
@@ -75,7 +72,7 @@
 
   @media (min-width: $tablet-width) {
     background-size: 268px 200px;
-    background-position: right 29px center;
+    background-position: top 91px right 29px;
   }
 
   @media (min-width: $desktop-width) {
@@ -88,10 +85,11 @@
   @include opacity(opacity 0.4s ease, 1, 0.3);
   display: flex;
   align-items: center;
-  padding: 4px 0;
+  padding: 5px 0;
   line-height: 16px;
 
   @media (min-width: $tablet-width) {
+    width: fit-content;
     font-size: 20px;
     line-height: 30px;
   }
@@ -103,7 +101,7 @@
   height: 24px;
   margin-left: 15px;
   background-image: url("../../icons/stack.svg#arrow-button");
-  background-size: 24px 10px;
+  background-size: 24px 12px;
   background-repeat: no-repeat;
   background-position: left center;
   transform-origin: left center;

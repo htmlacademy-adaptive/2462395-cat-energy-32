@@ -1,7 +1,7 @@
 .subscription {
   display: flex;
   flex-direction: column;
-  gap: 16;
+  gap: 16px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -12,12 +12,13 @@
 
 .subscription__input {
   @include title;
-  @include input;
   padding: 12px;
   font-size: 20px;
   line-height: 30px;
   color: $color-base;
   text-transform: uppercase;
+  border: 1px solid #e7e7e7;
+  transition: border-color 0.4s ease;
 
   @media (min-width: $tablet-width) {
     width: 376px;
@@ -26,9 +27,20 @@
   @media (min-width: $desktop-width) {
     width: 496px;
   }
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:user-invalid {
+    outline: 2px solid #ff8282;
+  }
 }
 
 .subscription__button {
+  padding: 15px;
+  font-size: 20px;
+  line-height: 26px;
   cursor: pointer;
 
   @media (min-width: $tablet-width) {

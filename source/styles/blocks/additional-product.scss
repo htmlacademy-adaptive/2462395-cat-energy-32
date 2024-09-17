@@ -1,14 +1,13 @@
 .additional-product {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto auto;
-  padding: 13px 0 19px;
+  padding: 13px 0 18px;
   line-height: 14px;
   border-top: 1px solid #cdcdcd;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 1fr 1fr 130px;
-    padding: 26px 38px 28px;
+    grid-template-columns: 1fr 1fr 92px;
+    padding: 26px 38px 27px;
     font-size: 16px;
     line-height: 20px;
     border-right: 1px solid #cdcdcd;
@@ -46,27 +45,27 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / 2;
-    padding: 25 0;
+    padding: 25px 20px 26px 0;
   }
 }
 
 .additional-product__amount {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
-  padding-bottom: 15px;
+  padding: 0 20px 15px 0;
 
   @media (min-width: $tablet-width) {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    place-self: end end;
-    padding-bottom: 24px;
+    justify-self: end;
+    padding: 0 0 24px 20px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     place-self: center start;
-    padding: 0;
+    padding: 0 20px 0 0;
   }
 }
 
@@ -78,15 +77,14 @@
   @media (min-width: $tablet-width) {
     grid-column: 3 / 4;
     grid-row: 1 / 2;
-    align-self: end;
-    padding-bottom: 24px;
+    padding: 0 0 24px 20px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 3 / 4;
     grid-row: 1 / 2;
     place-self: center start;
-    padding: 0;
+    padding: 0 20px 0 0;
   }
 }
 

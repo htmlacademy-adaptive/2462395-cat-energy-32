@@ -1,9 +1,7 @@
 .contacts {
-  position: relative;
-
   @media (min-width: $desktop-width) {
-    // display: grid;
-    // grid-template-columns: auto 565px 1fr auto;
+    display: grid;
+    grid-template-columns: 1fr 1220px 1fr;
   }
 }
 
@@ -13,19 +11,17 @@
   padding: 26px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 70px;
+    padding: 62px 70px;
   }
 
   @media (min-width: $desktop-width) {
-    // grid-column: 2 / 3;
-    // grid-row: 1 / 2;
-    // z-index: 1;
-    position: absolute;
-    top: 95px;
-    left: 110px;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    z-index: 1;
     width: 565px;
-    padding-left: 78px;
-    padding-right: 80px;
+    min-height: 199px;
+    margin: 95px 0 106px;
+    padding: 60px 78px 60px 80px;
     background-color: $bg-base;
   }
 }
@@ -42,12 +38,13 @@
   @include title("Oswald", 400, #111111);
   width: 140px;
   margin: 0;
+  padding-right: 10px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    width: 163px;
+    width: 180px;
     font-size: 20px;
     line-height: 26px;
   }
@@ -60,10 +57,17 @@
 
   @media (min-width: $tablet-width) {
     width: 157px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
   }
 }
 
 .contacts__map {
-  grid-column: 1 / 5;
-  grid-row: 1 / 2;
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+  }
 }

@@ -5,6 +5,27 @@
   justify-content: center;
 }
 
+.logo__trademark {
+  display: block;
+}
+
 .logo__caption {
   display: block;
+
+  @media (min-width: $desktop-width) {
+    width: 118px;
+    height: 21px;
+  }
+}
+
+.logo__caption--catalog {
+  height: 20px;
+
+  @media (min-width: $tablet-width) {
+    height: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 21px;
+  }
 }

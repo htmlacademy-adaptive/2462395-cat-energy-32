@@ -52,22 +52,3 @@
     }
   }
 }
-
-@mixin input {
-  & {
-    transition: border-color 0.4s ease;
-    border: 1px solid #e7e7e7;
-
-    &:hover {
-      border-color: #cdcdcd;
-    }
-
-    &:focus-visible {
-      border-color: $color-base;
-    }
-
-    &:invalid {
-      border-color: #ff8282;
-    }
-  }
-}

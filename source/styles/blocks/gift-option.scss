@@ -1,31 +1,79 @@
 .gift-option {
-  padding: 187px 61px 43px 58px;
+  min-height: 290px;
+  padding: 58px 61px 43px 58px;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  min-height: 90px;
   color: $color-primary;
-  background-color: rgba(104, 183, 56, 0.85);
-  background-image: url("../../icons/stack.svg#icon-gift");
-  background-size: 78px 80px;
+  background-color: $bg-primary;
+  background-image:
+    linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+    image-set(
+      url("../../images/cat-cover-mobile@1x.webp") type("image/webp") 1x,
+      url("../../images/cat-cover-mobile@2x.webp") type("image/webp") 2x,
+      url("../../images/cat-cover-mobile@1x.jpg") type("image/jpeg") 1x,
+      url("../../images/cat-cover-mobile@2x.jpg") type("image/jpeg") 2x
+    );
+  background-size: 100%;
   background-repeat: no-repeat;
-  background-position: center 59px;
+  background-position: center;
 
   @media (min-width: $tablet-width) {
-    padding: 71px 125px 69px 421px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 200px;
+    padding: 50px 125px 50px 77px;
     text-align: left;
-    background-size: 80px 83px;
-    background-position: 77px center;
+    background-image:
+      linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      image-set(
+        url("../../images/cat-cover-tablet@1x.webp") type("image/webp") 1x,
+        url("../../images/cat-cover-tablet@2x.webp") type("image/webp") 2x,
+        url("../../images/cat-cover-tablet@1x.jpg") type("image/jpeg") 1x,
+        url("../../images/cat-cover-tablet@2x.jpg") type("image/jpeg") 2x
+      );
   }
 
   @media (min-width: $desktop-width) {
-    padding: 185px 42px 43px;
+    display: block;
+    padding: 56px 42px 43px;
     width: 245px;
     text-align: center;
-    background-position: center 56px;
+    background-image:
+      linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      image-set(
+        url("../../images/cat-cover-desktop@1x.webp") type("image/webp") 1x,
+        url("../../images/cat-cover-desktop@2x.webp") type("image/webp") 2x,
+        url("../../images/cat-cover-desktop@1x.jpg") type("image/jpeg") 1x,
+        url("../../images/cat-cover-desktop@2x.jpg") type("image/jpeg") 2x
+      );
+  }
+}
+
+.gift-option::before {
+  display: block;
+  width: 78px;
+  height: 80px;
+  content: "";
+  background-image: url("../../icons/stack.svg#icon-gift");
+  background-repeat: no-repeat;
+  background-size: 78px 80px;
+  background-position: center top;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 83px;
+    background-size: 80px 83px;
+    background-position: left center;
   }
 }
 
 .gift-option__description {
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 161px;
+    margin: 0;
+  }
 }

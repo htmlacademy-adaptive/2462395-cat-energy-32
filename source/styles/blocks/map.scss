@@ -1,3 +1,15 @@
 .map__image {
   display: block;
 }
+
+.map iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 362px;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    min-height: 400px;
+  }
+}
