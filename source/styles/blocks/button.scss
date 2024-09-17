@@ -1,0 +1,25 @@
+.button {
+  @include title;
+  display: block;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+}
+
+.button--primary {
+  @include button;
+  color: $color-primary;
+  background-color: $bg-primary;
+}
+
+.button--secondary {
+  background-color: $bg-secondary;
+}
+
+.button--show-more {
+  @include button(background-color 0.4s ease, color 0.4s ease, #ebebeb, rgba(68, 68, 68, 0.3));
+  color: $color-base;
+}

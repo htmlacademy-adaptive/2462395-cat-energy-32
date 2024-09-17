@@ -1,0 +1,64 @@
+.example {
+  background-color: #eaeaea;
+
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient(to bottom, $bg-base 57%, #eaeaea 57%);
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: linear-gradient(to bottom, $bg-base 26%, #eaeaea 26%);
+  }
+}
+
+.example__wrapper {
+  padding: 25px 20px 41px;
+
+  @media (min-width: $tablet-width) {
+    padding: 45px 30px 100px;
+    border-top: 1px solid #e6e6e6;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 0 73px;
+    border-top: none;
+  }
+}
+
+.example__title {
+  margin: 0 0 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 146px;
+  }
+}
+
+.example__text-wrapper {
+  @media (min-width: $desktop-width) {
+    width: 436px;
+  }
+}
+
+.example__description {
+  margin: 0 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
+  }
+}
+
+.example__description br {
+  @media (max-width: 1220px) {
+    display: none;
+  }
+}

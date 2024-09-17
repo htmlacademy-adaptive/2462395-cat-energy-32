@@ -1,0 +1,120 @@
+.function {
+  padding: 20px 20px 49px;
+
+  @media (min-width: $tablet-width) {
+    padding: 45px 30px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 71px 0 0;
+  }
+}
+
+.function__title {
+  margin: 0 0 39px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 71px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 72px;
+  }
+}
+
+.function__list {
+  @include reset-list;
+  display: grid;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(auto-fit, 250px);
+    gap: 31px 134px;
+    counter-reset: counter;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 324px);
+    gap: 0;
+  }
+}
+
+.function__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    gap: 31px;
+    align-items: start;
+    counter-increment: counter;
+
+    &::after {
+      position: absolute;
+      top: -40px;
+      left: 112px;
+      content: counter(counter);
+      font-family: $secondary-font;
+      font-size: 280px;
+      line-height: 280px;
+      z-index: -1;
+      color: $bg-secondary;
+    }
+
+    &--healthy::after {
+      left: 118px;
+    }
+  }
+}
+
+.function__item::before {
+  flex-shrink: 0;
+  content: "";
+  width: 60px;
+  height: 60px;
+  background-color: $bg-primary;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.function__item--healthy::before {
+  background-image: url("../../icons/stack.svg#leaf-icon");
+  background-size: 30px 32px;
+}
+
+.function__item--easy::before {
+  background-image: url("../../icons/stack.svg#glass-icon");
+  background-size: 26px 29px;
+}
+
+.function__item--safe::before {
+  background-image: url("../../icons/stack.svg#cutlery-icon");
+  background-size: 25px 30px;
+}
+
+.function__item--fast::before {
+  background-image: url("../../icons/stack.svg#clock-icon");
+  background-size: 27px 31px;
+}
+
+.function__description {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    max-width: 245px;
+    margin-bottom: 103px;
+  }
+}
+
+.function__description br {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}

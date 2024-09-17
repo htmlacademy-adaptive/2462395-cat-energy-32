@@ -1,0 +1,36 @@
+.developer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  font-size: 16px;
+  line-height: 20px;
+  color: $color-base;
+
+  @media (min-width: $tablet-width) {
+    gap: 18px;
+    padding: 5px 0;
+  }
+
+  &::after {
+    flex: none;
+    width: 37px;
+    height: 34px;
+    content: "";
+    background-color: #666666;
+    mask-image: url("../../icons/stack.svg#developer-logo-icon");
+    mask-repeat: no-repeat;
+    mask-size: 27px 34px;
+    mask-position: center;
+    transition: background-color 0.4s ease;
+  }
+
+  &:hover::after,
+  &:focus-visible::after {
+    background-color: $bg-primary;
+  }
+
+  &:active::after {
+    background-color: #d2e9c3;
+  }
+}

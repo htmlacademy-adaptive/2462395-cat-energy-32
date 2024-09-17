@@ -1,0 +1,31 @@
+.logo {
+  @include opacity(opacity 0.4s ease, 0.8, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo__trademark {
+  display: block;
+}
+
+.logo__caption {
+  display: block;
+
+  @media (min-width: $desktop-width) {
+    width: 118px;
+    height: 21px;
+  }
+}
+
+.logo__caption--catalog {
+  height: 20px;
+
+  @media (min-width: $tablet-width) {
+    height: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 21px;
+  }
+}
