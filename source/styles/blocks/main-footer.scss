@@ -9,11 +9,11 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
     padding: 51px 30px;
   }
 
   @media (min-width: $desktop-width) {
-    justify-content: space-between;
     padding: 63px 0;
   }
 }
@@ -27,7 +27,6 @@
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
-    margin-right: 150px;
     padding: 10px 0;
     border-bottom: none;
   }
@@ -38,17 +37,10 @@
 }
 
 .main-footer__logo-caption {
+  display: block;
   height: 24px;
 }
 
 .main-footer__developer-link {
   margin-right: -5px;
-
-  @media (min-width: $tablet-width) {
-    margin-left: auto;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-left: 0;
-  }
 }

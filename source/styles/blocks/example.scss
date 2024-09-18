@@ -41,7 +41,7 @@
 
 .example__text-wrapper {
   @media (min-width: $desktop-width) {
-    width: 436px;
+    max-width: 440px;
   }
 }
 

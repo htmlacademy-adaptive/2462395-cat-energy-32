@@ -24,8 +24,8 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(auto-fit, 324px);
+    justify-content: center;
     gap: 60px;
-    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
