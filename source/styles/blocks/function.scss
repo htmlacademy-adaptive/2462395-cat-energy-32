@@ -33,8 +33,13 @@
     counter-reset: counter;
   }
 
+  @media (min-width: 800px) {
+    justify-content: center;
+  }
+
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 324px);
+    justify-content: start;
     gap: 0;
   }
 }

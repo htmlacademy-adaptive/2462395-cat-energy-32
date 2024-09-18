@@ -89,7 +89,7 @@
   @media (min-width: $tablet-width) {
     align-self: end;
     flex: none;
-    width: 174px;
+    max-width: 180px;
     margin: 9 0 116px;
     font-size: 20px;
     line-height: 29px;
@@ -100,7 +100,7 @@
     align-self: start;
     display: flex;
     gap: 66px;
-    width: 327px;
+    max-width: 327px;
     margin: 0;
     line-height: 20px;
   }

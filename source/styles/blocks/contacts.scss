@@ -36,7 +36,7 @@
 
 .contacts__message {
   @include title("Oswald", 400, #111111);
-  width: 140px;
+  max-width: 140px;
   margin: 0;
   padding-right: 10px;
   font-size: 16px;
@@ -44,19 +44,19 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    width: 180px;
+    max-width: 180px;
     font-size: 20px;
     line-height: 26px;
   }
 }
 
 .contacts__address {
-  width: 140px;
+  max-width: 140px;
   font-style: normal;
   line-height: 20px;
 
   @media (min-width: $tablet-width) {
-    width: 157px;
+    max-width: 157px;
     text-align: right;
   }
 
