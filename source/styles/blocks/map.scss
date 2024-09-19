@@ -1,8 +1,10 @@
-.map__image {
-  display: block;
+.map {
+  display: grid;
 }
 
 .map iframe {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
   display: block;
   width: 100%;
   height: 100%;
@@ -12,4 +14,14 @@
   @media (min-width: $tablet-width) {
     min-height: 400px;
   }
+}
+
+.map picture {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  z-index: -1;
+}
+
+.map__image {
+  display: block;
 }
